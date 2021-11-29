@@ -2,13 +2,14 @@
 const _ = require('../index');
 const assertArraysEqual = _.assertArraysEqual;
 // const eqArrays=_.eqArrays;
-const assert = require('chai').assert;
+// const assert = require('chai').assert;
 
-
+console.log(`   #assertArraysEqual-----Starts here`)
 assertArraysEqual([], []);
 assertArraysEqual([1, 2, 3], [1, 2, 3]);
 assertArraysEqual([1, 2, 3], [1, 2, 3, 4]);
 assertArraysEqual([1, 2, 3, 5], [1, 2, 3, 4]);
+console.log(`   #assertArraysEqual-----Ends here`)
 
 // describe("#assertArraysEqual", () => {
 //     it(`logs out Passed for [],[]`, () => {
