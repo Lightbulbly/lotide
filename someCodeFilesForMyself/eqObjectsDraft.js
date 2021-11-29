@@ -1,4 +1,4 @@
-const eqArrays = function (arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   if (arr1.length === arr2.length) {
     let counter = 0;
     for (let i = 0; i < arr1.length; i++) {
@@ -16,7 +16,7 @@ const eqArrays = function (arr1, arr2) {
   }
 };
 
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅Assertion Passed ${actual} === ${expected} `);
   } else {
@@ -25,7 +25,7 @@ const assertEqual = function (actual, expected) {
 };
 
 // Returns true if both objects have identical keys with identical values. Otherwise return false
-const eqObjects = function (object1, object2) {
+const eqObjects = function(object1, object2) {
   let keysOfObj1 = Object.keys(object1);
   let keysOfObj2 = Object.keys(object2);
   let objHasEqualNumOfKeys = keysOfObj1.length === keysOfObj2.length;
@@ -35,32 +35,32 @@ const eqObjects = function (object1, object2) {
     return false;
   } //objHasEqualNumOfKeys
   else {
-   let counter = 0; 
+    let counter = 0;
     for (const key of keysOfObj1) { //<----for of loop starts
-//  console.log(key);
- if (typeof(object1[key])!==typeof(object2[key])){ result = false;} 
- else  {
-//same type, check values
+      //  console.log(key);
+      if (typeof(object1[key]) !== typeof(object2[key])) {
+        result = false;
+      } else  {
+        //same type, check values
 
-  if (Array.isArray(object1[key])) 
-{ 
-  // console.log(object1[key], object2[key]);
-  result = eqArrays(object1[key], object2[key]); 
-} else {
-  // console.log("key: ", key, object1[key], object2[key])
-  // console.log("POW");
-  result = object1[key]===object2[key] ? true : false; 
-}
+        if (Array.isArray(object1[key])) {
+          // console.log(object1[key], object2[key]);
+          result = eqArrays(object1[key], object2[key]);
+        } else {
+          // console.log("key: ", key, object1[key], object2[key])
+          // console.log("POW");
+          result = object1[key] === object2[key] ? true : false;
+        }
 
 
-       }
+      }
  
  
 
 
-  } //<----for of loop ends 
-} 
-return result;
+    } //<----for of loop ends
+  }
+  return result;
 };
 
 const ab = { a: "1", b: "2" };
@@ -98,25 +98,25 @@ assertEqual(eqObjects(cd, cd2), false);
 // assertEqual(eqObjects(myCar, hisCar), false);
 
 
-     // console.log(Array.isArray(object1[key]));
-      // console.log(Array.isArray(object2[key]));
+// console.log(Array.isArray(object1[key]));
+// console.log(Array.isArray(object2[key]));
 
-    //   let obj1AtKeyIsArray = Array.isArray(object1[key]);
-    //   let obj2AtKeyIsArray = Array.isArray(object2[key]);
-    //   // console.log("key: ", key);
-    //   // console.log("object1[key]: ", object1[key], "array? ", Array.isArray(object1[key]),obj1AtKeyIsArray);
-    //   // console.log("object2[key]: ", object2[key], "array? ", Array.isArray(object2[key]),obj2AtKeyIsArray);
-    //   if (obj1AtKeyIsArray && obj2AtKeyIsArray) {
-    //     // compare two arrays
-    //     // console.log(eqArrays(object1[key], object2[key]), "here");
-    //     return eqArrays(object1[key], object2[key]) ? true : false;
-    //   } else if(!obj1AtKeyIsArray || !obj2AtKeyIsArray) {
-    //     return false;
-    //   } else if (obj1AtKeyIsArray && obj2AtKeyIsArray ) {
-    //     return object1[key] === object2[key] ? true: false;
+//   let obj1AtKeyIsArray = Array.isArray(object1[key]);
+//   let obj2AtKeyIsArray = Array.isArray(object2[key]);
+//   // console.log("key: ", key);
+//   // console.log("object1[key]: ", object1[key], "array? ", Array.isArray(object1[key]),obj1AtKeyIsArray);
+//   // console.log("object2[key]: ", object2[key], "array? ", Array.isArray(object2[key]),obj2AtKeyIsArray);
+//   if (obj1AtKeyIsArray && obj2AtKeyIsArray) {
+//     // compare two arrays
+//     // console.log(eqArrays(object1[key], object2[key]), "here");
+//     return eqArrays(object1[key], object2[key]) ? true : false;
+//   } else if(!obj1AtKeyIsArray || !obj2AtKeyIsArray) {
+//     return false;
+//   } else if (obj1AtKeyIsArray && obj2AtKeyIsArray ) {
+//     return object1[key] === object2[key] ? true: false;
 
-    //   }
+//   }
     
  
     
-    // }
+// }

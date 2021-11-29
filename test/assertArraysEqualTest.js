@@ -1,8 +1,8 @@
 // const assertArraysEqual = require('../assertArraysEqual');
 const _ = require('../index');
-const assertArraysEqual=_.assertArraysEqual;
+const assertArraysEqual = _.assertArraysEqual;
 // const eqArrays=_.eqArrays;
-const assert = require('chai').assert; 
+const assert = require('chai').assert;
 
 
 assertArraysEqual([], []);

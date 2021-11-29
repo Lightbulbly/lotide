@@ -1,4 +1,4 @@
-const countOnly = function (allItems, itemsToCount) {
+const countOnly = function(allItems, itemsToCount) {
   let KeysOfItemToCount = Object.keys(itemsToCount);
   let ValuesOfItemToCount = Object.values(itemsToCount);
   // console.log("allItems:", allItems, "itemsToCount", itemsToCount);
@@ -23,7 +23,7 @@ const countOnly = function (allItems, itemsToCount) {
   return result;
 };
 
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅Assertion Passed ${actual} === ${expected} `);
   } else {

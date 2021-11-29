@@ -1,5 +1,5 @@
 // a function that takes in two arrays and returns true or false, based on a perfect match
-const eqArrays = function (arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   if (arr1.length === arr2.length) {
     let counter = 0;
     for (let i = 0; i < arr1.length; i++) {
@@ -16,4 +16,4 @@ const eqArrays = function (arr1, arr2) {
     return false;
   }
 };
-module.exports=eqArrays;
+module.exports = eqArrays;

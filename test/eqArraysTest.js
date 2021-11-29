@@ -1,8 +1,8 @@
 // const assertEqual = require('../assertEqual');
 // const eqArrays = require('../eqArrays');
 const _ = require('../index');
-const assertEqual=_.assertEqual;
-const eqArrays=_.eqArrays;
+const assertEqual = _.assertEqual;
+const eqArrays = _.eqArrays;
 
 assertEqual(assertEqual([], []), true); // => should PASS;
 assertEqual(eqArrays([1, 2, 3, 4], [1, 2, 3]), false); // => should PASS

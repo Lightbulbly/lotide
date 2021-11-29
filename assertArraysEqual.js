@@ -1,4 +1,4 @@
-// const eqArrays = require('./eqArrays'); 
+// const eqArrays = require('./eqArrays');
 // const eqArrays =_.eqArrays;
 // console.log(eqArrays, "This is not working");
 
