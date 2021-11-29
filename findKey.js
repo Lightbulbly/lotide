@@ -60,3 +60,4 @@ assertEqual(
   ),
   "Akaleri"
 );
+module.exports = findKey;
