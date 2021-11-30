@@ -1,4 +1,7 @@
+// const _ = require('./index');
+// const eqArrays = _.eqArrays;
 const eqArrays = require('./eqArrays');
+
 // const assertEqual = require('./assertEqual');
 
 // Returns true if both objects have identical keys with identical values. Otherwise return false

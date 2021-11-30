@@ -1,3 +1,7 @@
+// const _= require('../index');
+// const assertArraysEqual = _.assertArraysEqual;
+// const eqArrays = _.eqArrays;
+
 const assert = require('chai').assert;
 const middle   = require('../middle');
 describe("#middle", () => {
